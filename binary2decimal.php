@@ -30,8 +30,10 @@ function binary2decimal(string $binaryString) : int
     return $decimal;
 }
 
+// Example implementations
 try {
-    var_dump(binary2decimal(binaryString: "1010111010"));
+    echo binary2decimal(binaryString: "0b0101110111") . PHP_EOL;
+    echo binary2decimal(binaryString: "0101110111") . PHP_EOL;
 } catch(Exception $exception) {
     echo "Error : " . $exception->getMessage() . PHP_EOL;
 }
